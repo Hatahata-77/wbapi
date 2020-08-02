@@ -24,7 +24,7 @@ namespace wbapi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Wb>>> GetWb()
         {
-            return await _context.Wb.ToListAsync();
+            return await _context.Wb.Where(e => e.Seq.StartsWith("33") || e.Seq.StartsWith("34")).OrderBy(e => e.Seq).ToListAsync();
         }
 
         // GET: api/wb/5
