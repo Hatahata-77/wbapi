@@ -203,7 +203,7 @@ launchSettings.json の　launchUrl　を今回作成した COntrollerにルー�
 
 ## 最後に
 
-今回使用したコマンとをまとめておきます。
+今回使用したコマンドをまとめておきます。
 
 ```powershell:apendix
 dotnet tool update --global dotnet-ef
